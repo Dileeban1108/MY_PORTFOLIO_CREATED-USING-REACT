@@ -8,7 +8,7 @@ const Home = () => {
       const typedStrings = typedElement.getAttribute('data-typed-items').split(',');
       new Typed('.typed', {
         strings: typedStrings,
-        loop: true, 
+        loop: true,
         typeSpeed: 80,
         backSpeed: 50,
         backDelay: 2000,
@@ -45,7 +45,12 @@ const Home = () => {
             data-typed-items="Full Stack Web Developer,Cybersecurity Enthusiast,Php Developer"
           ></span>
         </p>
+       
+
       </div>
+        <a href="/Dileeban_CV.pdf" download="Dileeban_CV.pdf" className="cv">
+          Download My CV
+        </a>  
       <a href="#" className="back-to-top">
         <i className="bi bi-arrow-up-short"></i>
       </a>

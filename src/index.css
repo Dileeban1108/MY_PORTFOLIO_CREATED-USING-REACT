@@ -15,7 +15,23 @@ a:hover {
   color: #37b3ed;
   text-decoration: none;
 }
+.cv {
+  position: absolute;
+bottom: 7rem;
+right:40%;
+padding: 1.5rem 2rem;
+border-radius: 10px;
+background-color: #ffffff;
+border: none;
+font-size: .9rem;
+color: #0469f6;
+font-weight: bold;
+z-index: 5000;
+}
 
+.cv :hover{
+  background-color: #1272f9;
+}
 h1,
 h2,
 h3,
@@ -418,6 +434,54 @@ font-weight: 700;
   border-radius: 5px;
 }
 /* ============================================/ */
+@media (max-width: 990px) {
+  .skill-content {
+    flex-wrap: wrap;
+  }
+} 
+.skills {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.section-bg {
+  background-color: #f2f7ff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #666;
+}
+
+.skill-content {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills_1 {
+  width: 100%;
+}
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -425,7 +489,6 @@ font-weight: 700;
   border-radius: 0;
   width: 100%;
 }
-
 .skills .progress .skill {
   padding: 0;
   margin: 0 0 6px 0;
@@ -440,6 +503,11 @@ font-weight: 700;
   float: right;
   font-style: normal;
 }
+.progress .skill i {
+  font-style: normal;
+  float: right;
+  margin-right: 10px;
+}
 
 .skills .progress-bar-wrap {
   background: #dce8f8;
@@ -453,22 +521,30 @@ font-weight: 700;
   transition: 0.9s;
   background-color: #149ddd;
 }
-.container {
-  padding: 50px;
-}
-.skill-content {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-.skills_1 {
+.progress-bar[aria-valuenow="100"] {
   width: 100%;
 }
-@media (max-width: 990px) {
-  .skill-content {
-    flex-wrap: wrap;
-  }
+
+.progress-bar[aria-valuenow="90"] {
+  width: 90%;
 }
+
+.progress-bar[aria-valuenow="85"] {
+  width: 85%;
+}
+
+.progress-bar[aria-valuenow="80"] {
+  width: 80%;
+}
+
+.progress-bar[aria-valuenow="75"] {
+  width: 75%;
+}
+
+.progress-bar[aria-valuenow="55"] {
+  width: 55%;
+}
+
 /* =========================================== */
 .resume .resume-title {
   font-size: 26px;
@@ -532,7 +608,7 @@ font-weight: 700;
   display: flex;
 flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
+  justify-content:center;
 align-items: center;
 gap: .5rem;
 }
@@ -549,7 +625,7 @@ gap: .5rem;
   justify-content: space-between;
   align-items: center;
 }
-.hover-text {
+.hover-text a{
   bottom: 10px; 
   background:#149ddd ; 
   color: white; 
@@ -604,6 +680,9 @@ gap: .5rem;
   .project-item {
     width: 25%;
   }
+  .hover-text a{
+    font-size: .5rem;
+  }
 }
 @media (max-width: 650px) {
   .project-item {
@@ -618,6 +697,7 @@ gap: .5rem;
   .project-item {
     width: 100%;
   }
+
 }
 
 

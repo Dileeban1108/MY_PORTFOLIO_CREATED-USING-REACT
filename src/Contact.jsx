@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
-const handleSubmit = () => {};
+const handleSubmit = (e, name, email, subject, message) => {
+  e.preventDefault();
+  alert(`Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
+};
+
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <section id="contact" className="contact">
       <div className="container">
         <div className="section-title">
           <h2>Contact</h2>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            Please do not hesitate to reach out to me through any of the options below if you have any questions.
           </p>
         </div>
 
@@ -21,7 +27,7 @@ const Contact = () => {
               <i className="bi bi-geo-alt"></i>
               <div className="des">
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>M24/2, Malalpola Division, Yatiyanthota</p>
               </div>
             </div>
 
@@ -29,7 +35,7 @@ const Contact = () => {
               <i className="bi bi-envelope"></i>
               <div className="des">
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>sekara.dileeban@gmail.com</p>
               </div>
             </div>
 
@@ -37,57 +43,66 @@ const Contact = () => {
               <i className="bi bi-phone"></i>
               <div className="des">
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+9476 756 6677</p>
               </div>
             </div>
 
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-              frameborder="0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1072617607577!2d80.11939531526948!3d7.118004019512814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3129fbd4f4a7b%3A0x7bf4eb657b4e1d60!2sM24%2F2%2C%20Malalpola%20Division%2C%20Yatiyanthota!5e0!3m2!1sen!2slk!4v1620346187721!5m2!1sen!2slk"
+              frameBorder="0"
               style={{ border: "0", width: "100%", height: "290px" }}
-              allowfullscreen
+              allowFullScreen
+              title="Google Maps Location"
             ></iframe>
           </div>
 
-          <form onSubmit={handleSubmit} className="php-email-form">
+          <form onSubmit={(e) => handleSubmit(e, name, email, subject, message)} className="php-email-form">
             <div className="form-fields">
               <div className="form-inputs">
-                <label for="name">Your Name</label>
+                <label htmlFor="name">Your Name</label>
                 <input
                   type="text"
                   name="name"
                   className="form-control"
                   id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   required
                 />
               </div>
               <div className="form-inputs">
-                <label for="name">Your Email</label>
+                <label htmlFor="email">Your Email</label>
                 <input
                   type="email"
                   className="form-control"
                   name="email"
                   id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                 />
               </div>
             </div>
             <div className="form-group">
-              <label for="name">Subject</label>
+              <label htmlFor="subject">Subject</label>
               <input
                 type="text"
                 className="form-control"
                 name="subject"
                 id="subject"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
                 required
               />
             </div>
             <div className="form-group">
-              <label for="name">Message</label>
+              <label htmlFor="message">Message</label>
               <textarea
                 className="form-control"
                 name="message"
                 rows="10"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 required
               ></textarea>
             </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import Home from "./Home";
 import About from "./About";
-import Education from "./Education";
 import Skills from "./Skills";
 import Resume from "./Resume";
 import Project from "./Project";
