@@ -18,3 +18,9 @@ A personal portfolio website built with React to showcase my projects, skills, a
 1. Clone the repository:
    ```sh
    git clone https://github.com/Dileeban1108/MY_PORTFOLIO_CREATED-USING-REACT.git
+   
+## Run the portfolio
+1. Open a new terminal and Copy and Paste
+   ```sh
+   npm install   
+   npm start
