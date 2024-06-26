@@ -3,11 +3,9 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      <strong>&copy; All Rights Reserved</strong>
       </div>
-      <div className="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+      
     </div>
   );
 };

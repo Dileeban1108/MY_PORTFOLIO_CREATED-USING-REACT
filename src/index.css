@@ -5,6 +5,7 @@
   transition:all ease-in-out 0.5s;
   scroll-behavior: smooth;
 }
+
 a {
   color: #149ddd;
   text-decoration: none;

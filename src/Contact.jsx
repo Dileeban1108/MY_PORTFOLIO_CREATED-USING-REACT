@@ -1,15 +1,35 @@
 import React, { useState } from "react";
-
-const handleSubmit = (e, name, email, subject, message) => {
-  e.preventDefault();
-  alert(`Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
-};
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      subject,
+      message,
+    };
+
+    emailjs.send('service_xtdega5', 'template_k8jamq7', templateParams, 'SxHsbr-TUgEcIZKmW')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert("Message sent successfully!");
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      }, (err) => {
+        console.error('FAILED...', err);
+        alert("Failed to send message. Please try again later.");
+      });
+  };
 
   return (
     <section id="contact" className="contact">
@@ -48,7 +68,7 @@ const Contact = () => {
             </div>
 
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1072617607577!2d80.11939531526948!3d7.118004019512814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3129fbd4f4a7b%3A0x7bf4eb657b4e1d60!2sM24%2F2%2C%20Malalpola%20Division%2C%20Yatiyanthota!5e0!3m2!1sen!2slk!4v1620346187721!5m2!1sen!2slk"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15838.452259511603!2d80.32473549519895!3d7.054669887161595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1719373695701!5m2!1sen!2slk"
               frameBorder="0"
               style={{ border: "0", width: "100%", height: "290px" }}
               allowFullScreen
@@ -56,7 +76,7 @@ const Contact = () => {
             ></iframe>
           </div>
 
-          <form onSubmit={(e) => handleSubmit(e, name, email, subject, message)} className="php-email-form">
+          <form onSubmit={handleSubmit} className="php-email-form">
             <div className="form-fields">
               <div className="form-inputs">
                 <label htmlFor="name">Your Name</label>

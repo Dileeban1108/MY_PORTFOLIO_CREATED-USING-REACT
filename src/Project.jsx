@@ -14,9 +14,9 @@ const Project = () => {
   ];
 
   const projects = [
+    { title: "School Management System", category: "MERN Stack Projects", src:"https://github.com/Dileeban1108/SCHOOL_MANAGEMENT_SYSTEM_USING-MERN_STACK.git"},
     { title: "University Management System", category: "MERN Stack Projects", src:"https://github.com/Dileeban1108/UNIVERSITY_SHEDULE_FULLSTACK_WEBAPPLICATION_USING_MERN_STACK.git"},
     { title: "Medical Application", category: "MERN Stack Projects" ,src:"https://github.com/Dileeban1108/MEDICARE_APP_FULLSTACK_WEB_APPLICATION_USING_MERN_STACK.git"},
-    { title: "My Portfolio", category: "React projects",src:"https://github.com/Dileeban1108/MY_PORTFOLIO_CREATED-USING-REACT.git" },
     { title: "Expense Tracker", category: "React projects" ,src:"https://github.com/Dileeban1108/EXPENSE-TRACKER-created-using-REACT.git"},
     { title: "Key Logger", category: "Cybersecurity projects" ,src:"https://github.com/Dileeban1108/KEYLOGGER_CTBERSECURITY_PYTHON_PROJECT.git"},
     { title: "File Encryptor & Decryptor", category: "Cybersecurity projects" ,src:"https://github.com/Dileeban1108/FILE-ENCRYPTER-AND-DECRYPTER-CYBERSECURITY-PYTHON-PROJECT.git"},
