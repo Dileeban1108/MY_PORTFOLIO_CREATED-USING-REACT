@@ -6,6 +6,7 @@ import Resume from "./Resume";
 import Project from "./Project";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Certificates from "./Certificates";
 import "boxicons/css/boxicons.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useEffect } from "react";
@@ -112,6 +113,7 @@ const Main = () => {
         <About />
         <Skills />
         <Resume />
+        <Certificates/>
         <Project />
         <Contact />
       </div>

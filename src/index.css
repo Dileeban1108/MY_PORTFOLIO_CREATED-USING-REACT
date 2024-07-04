@@ -2,7 +2,7 @@
   font-family: "Open Sans", sans-serif;
   color: #717275;
   margin: 0;
-  transition:all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
   scroll-behavior: smooth;
 }
 
@@ -18,19 +18,19 @@ a:hover {
 }
 .cv {
   position: absolute;
-bottom: 7rem;
-right:40%;
-padding: 1.5rem 2rem;
-border-radius: 10px;
-background-color: #ffffff;
-border: none;
-font-size: .9rem;
-color: #0469f6;
-font-weight: bold;
-z-index: 5000;
+  bottom: 7rem;
+  right: 40%;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 0.9rem;
+  color: #0469f6;
+  font-weight: bold;
+  z-index: 5000;
 }
 
-.cv :hover{
+.cv :hover {
   background-color: #1272f9;
 }
 h1,
@@ -128,7 +128,6 @@ h6 {
 #main {
   margin-left: 330px;
 }
-
 
 @media (max-width: 1199px) {
   #header {
@@ -269,7 +268,7 @@ h6 {
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
-} 
+}
 @media (max-width: 1390px) {
   #hero h1 {
     font-size: 50px;
@@ -306,7 +305,7 @@ h6 {
   #hero {
     background-image: url("./assets/myimage_3.jpg");
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   #hero .hero-container {
@@ -379,8 +378,8 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-font-size: 1.1rem;
-font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 /* =============================================== */
@@ -439,7 +438,7 @@ font-weight: 700;
   .skill-content {
     flex-wrap: wrap;
   }
-} 
+}
 .skills {
   padding: 60px 0;
   background: #f9f9f9;
@@ -607,11 +606,11 @@ font-weight: 700;
 /* ========================================== */
 .project-list {
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
-  justify-content:center;
-align-items: center;
-gap: .5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .project-item {
@@ -619,47 +618,50 @@ gap: .5rem;
   background: #f7f7f7;
   border: 1px solid #ddd;
   border-radius: 5px;
-  height: 27.8vh;
+  height: 230px;
   width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.hover-text a{
-  bottom: 10px; 
-  background:#149ddd ; 
-  color: white; 
-  padding: 0.5rem; 
-  border-radius: 5px; 
-  font-size: 0.8rem; 
-  text-align: center; 
+.project-item img{
+width: 100%;
+}
+.hover-text a {
+  bottom: 10px;
+  background: #149ddd;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  text-align: center;
 }
 .project-item:hover {
   background: #d4d4d4;
 }
-.project-ul{
+.project-ul {
   color: #ffffff;
   margin-bottom: 1rem;
   font-family: sans-serif;
   width: 100%;
 }
-.project-main-container{
+.project-main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.project-ul li{
+.project-ul li {
   color: #ffffff;
-  padding: .8rem 0;
+  padding: 0.8rem 0;
   width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.project-ul ul{
+.project-ul ul {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -667,41 +669,42 @@ gap: .5rem;
   cursor: pointer;
 }
 @media (max-width: 1020px) {
-  .project-main-container{
-    font-size: .8rem;
+  .project-main-container {
+    font-size: 0.75rem;
   }
 }
 @media (max-width: 760px) {
-  .project-main-container{
-    font-size: .7rem;
+  .project-main-container {
+    font-size: 0.7rem;
   }
-
 }
 @media (max-width: 860px) {
   .project-item {
-    width: 25%;
+    width: 27%;
   }
-  .hover-text a{
-    font-size: .5rem;
+  .hover-text a {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 950px) {
+  .hover-text a {
+    font-size: 0.5rem;
   }
 }
 @media (max-width: 650px) {
   .project-item {
     width: 38%;
   }
-  .project-ul li{
-    font-size: .5rem;
+  .project-ul li {
+    font-size: 0.5rem;
   }
-
 }
 @media (max-width: 455px) {
   .project-item {
     width: 100%;
+    height: 270px;
   }
-
 }
-
-
 
 /* ========================================== */
 
@@ -864,4 +867,3 @@ gap: .5rem;
   }
 }
 /* ========================================= */
-
