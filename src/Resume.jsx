@@ -14,7 +14,7 @@ const Resume = () => {
 
         <div className="row">
           <div className="col-lg-6" data-aos="fade-up">
-            <h3 className="resume-title">Sumary</h3>
+            <h3 className="resume-title">Summary</h3>
             <div className="resume-item pb-0">
               <h4>Soft Skills</h4>
               <ul>
@@ -25,12 +25,12 @@ const Resume = () => {
                 <li>Leadership</li>
               </ul>
             </div>
-
+            <br></br>
             <h3 className="resume-title">Education</h3>
             <div className="resume-item">
-              <h4>B.Sc(Hon's) in Software Engineeering</h4>
+              <h4>B.Sc(Hon's) in Software Engineering</h4>
               <h5>2022 - 2026</h5>
-              <p>Current GPA:3.75</p>
+              <p>Current GPA : 3.75</p>
               <p>
                 <em>University Of Kelaniya-Sri Lanka</em>
               </p>
@@ -38,12 +38,14 @@ const Resume = () => {
             <div className="resume-item">
               <h4>G.C.E Advanced Level</h4>
               <h5>2018 - 2020</h5>
-              <p>Z-Score:1.5348</p>
+              <p>Z-Score : 1.5348</p>
               <p>
                 <em>Rajasinghe Central College-Ruvanwella</em>
               </p>
             </div>
           </div>
+          <br></br>
+
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 className="resume-title">Volunteering Experiences</h3>
             <div className="resume-item">

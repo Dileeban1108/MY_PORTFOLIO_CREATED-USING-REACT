@@ -47,22 +47,15 @@ const Main = () => {
           <div className="img"></div>
 
           <h1 className="text-light">
-            <a href="index.html">Sekara Dileeban</a>
+            <a href="">Sekara Dileeban</a>
           </h1>
           <div className="social-links">
-            <a href="#" className="twitter">
-              <i className="bx bxl-twitter"></i>
+            
+            <a href="https://github.com/Dileeban1108" className="facebook">
+              <i className="bx bxl-github"></i>
             </a>
-            <a href="#" className="facebook">
-              <i className="bx bxl-facebook"></i>
-            </a>
-            <a href="#" className="instagram">
-              <i className="bx bxl-instagram"></i>
-            </a>
-            <a href="#" className="google-plus">
-              <i className="bx bxl-skype"></i>
-            </a>
-            <a href="#" className="linkedin">
+          
+            <a href="https://www.linkedin.com/in/dileebanli2001" className="linkedin">
               <i className="bx bxl-linkedin"></i>
             </a>
           </div>
@@ -91,6 +84,11 @@ const Main = () => {
               </a>
             </li>
 
+            <li>
+              <a href="#certificate" className="nav-link scrollto">
+                <i className="bx bx-book-content"></i> <span>Certificates</span>
+              </a>
+            </li>
             <li>
               <a href="#project" className="nav-link scrollto">
                 <i className="bx bx-book-content"></i> <span>Projects</span>

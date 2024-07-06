@@ -27,7 +27,7 @@ const Contact = () => {
         setMessage("");
       }, (err) => {
         console.error('FAILED...', err);
-        alert("Failed to send message. Please try again later.");
+        alert("Failed to send message. Please try again later.try with phone number");
       });
   };
 

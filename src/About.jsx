@@ -3,7 +3,7 @@ const About = () => {
   const languages = [
     { name: "Sinhala", proficiency: 100 },
     { name: "Tamil", proficiency: 100 },
-    { name: "English", proficiency: 80 },
+    { name: "English", proficiency: 90 },
   ];
   return (
     <section id="about" className="about">
@@ -15,10 +15,12 @@ const About = () => {
             programming languages, software design, and system analysis,
             enabling me to build and manage complex software solutions
             efficiently. Throughout my coursework and personal projects, I have
-            honed my skills in full stack development, with a particular focus
-            on technologies such as React, Node.js, and PHP. I am passionate
-            about creating seamless user experiences and writing clean,
-            maintainable code
+            honed my skills in full stack development, particularly with the
+            MERN stack (MongoDB, Express.js, React, Node.js). Additionally, I
+            have developed a solid foundation in cybersecurity, which allows me
+            to ensure the security and integrity of the applications I create. I
+            am passionate about creating seamless user experiences and writing
+            clean, maintainable code
           </p>
         </div>
 
@@ -27,11 +29,9 @@ const About = () => {
             <img src="./assets/myimage.jpg" className="img-fluid" alt="" />
           </div>
           <div className="content">
-            <h3>Software Engineering Undergraduate</h3>
+            <h3>Bio Data</h3>
             <p className="des">
-              As a third-year Software Engineering undergraduate at the
-              University of Kelaniya, I have developed a robust foundation in
-              software development and cybersecurity.
+             
             </p>
             <div className="row">
               <div className="col-lg-6">

@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <section id="hero">
       <div className="hero-container">
-        <h1>Sekara Dileeban</h1>
+        <h1>SEKARA DILEEBAN</h1>
         <p>
           I'm a{" "}
           <span

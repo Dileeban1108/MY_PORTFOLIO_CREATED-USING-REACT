@@ -16,20 +16,21 @@ const Certificates = () => {
   ];
 
   return (
-    <section id="project" className="portfolio section-bg">
+    <section id="certificate" className="portfolio section-bg">
       <div className="container">
         <div className="section-title">
           <h2>Certificates</h2>
           <p>
-            I have successfully completed a variety of certificates, including
-            Cybersecurity and Artificial Intelligence.
+            I have successfully earned certifications in Cybersecurity and
+            Artificial Intelligence, reflecting my commitment to staying at the
+            forefront of technological advancements.
           </p>
         </div>
 
         <div className="project-main-container">
           <div className="project-list">
             {certificates.map((certificate, index) => (
-              <div key={index} className="project-item" >
+              <div key={index} className="project-item">
                 <img src={certificate.img} alt={certificate.img} />
                 <div className="hover-text">
                   <a
