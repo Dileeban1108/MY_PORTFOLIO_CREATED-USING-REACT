@@ -9,19 +9,9 @@ const About = () => {
     <section id="about" className="about">
       <div className="container">
         <div className="section-title">
-          <h2>About Me</h2>
+          <h2 style={{color:"#149ddd",textTransform:"uppercase", fontSize:"25px" }}>Who Am I</h2>
           <p>
-            My academic journey has equipped me with a deep understanding of
-            programming languages, software design, and system analysis,
-            enabling me to build and manage complex software solutions
-            efficiently. Throughout my coursework and personal projects, I have
-            honed my skills in full stack development, particularly with the
-            MERN stack (MongoDB, Express.js, React, Node.js). Additionally, I
-            have developed a solid foundation in cybersecurity, which allows me
-            to ensure the security and integrity of the applications I create. I
-            am passionate about creating seamless user experiences and writing
-            clean, maintainable code
-          </p>
+          My academic background and hands-on experience as a Trainee Software Engineer have equipped me with a solid foundation in programming, software design, and system analysis. I specialize in full-stack development using Java, JavaScript, Spring Boot, React, and Angular. In my trainee role, I contributed to developing and improving web applications in agile teams, gaining practical industry experience. With a strong understanding of cybersecurity principles, I build secure, reliable applications and focus on delivering clean, maintainable code and seamless user experiences.          </p>
         </div>
 
         <div className="row">
@@ -29,10 +19,6 @@ const About = () => {
             <img src="./assets/myimage.jpg" className="img-fluid" alt="" />
           </div>
           <div className="content">
-            <h3>Bio Data</h3>
-            <p className="des">
-             
-            </p>
             <div className="row">
               <div className="col-lg-6">
                 <ul>

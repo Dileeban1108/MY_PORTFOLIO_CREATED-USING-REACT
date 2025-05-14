@@ -56,7 +56,7 @@ const Project = () => {
     <section id="project" className="portfolio section-bg">
       <div className="container">
         <div className="section-title">
-          <h2>Projects</h2>
+          <h2 style={{color:"#149ddd",textTransform:"uppercase", fontSize:"25px"}}>Projects</h2>
           <p>
             I have successfully completed a variety of projects, including
             dynamic web applications using PHP, full-stack development projects

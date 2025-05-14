@@ -5,28 +5,12 @@ const Resume = () => {
     <section id="resume" className="resume">
       <div className="container">
         <div className="section-title">
-          <h2>Resume</h2>
-          <p>
-            I have mentioned my educational qualifications and experiences
-            below.
-          </p>
+          <h2 style={{ color: "#149ddd", textTransform: "uppercase", fontSize:"25px" }} >Resume</h2>
         </div>
 
         <div className="row">
           <div className="col-lg-6" data-aos="fade-up">
-            <h3 className="resume-title">Summary</h3>
-            <div className="resume-item pb-0">
-              <h4>Soft Skills</h4>
-              <ul>
-                <li>Effective communication</li>
-                <li>Critical Thinking</li>
-                <li>Time Management</li>
-                <li>Colloborative Working</li>
-                <li>Leadership</li>
-              </ul>
-            </div>
-            <br></br>
-            <h3 className="resume-title">Education</h3>
+            <h3 className="resume-title" style={{color:"#149ddd",textTransform:"uppercase" ,fontSize:"20px"}}>Education</h3>
             <div className="resume-item">
               <h4>B.Sc(Hon's) in Software Engineering</h4>
               <h5>2022 - 2026</h5>
@@ -44,10 +28,33 @@ const Resume = () => {
               </p>
             </div>
           </div>
-          <br></br>
-
+          <br />
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 className="resume-title">Volunteering Experiences</h3>
+            <h3 className="resume-title" style={{color:"#149ddd",textTransform:"uppercase" ,fontSize:"20px" }}>Professional Experiences</h3>
+            <div className="resume-item">
+              <h4>Trainee software enginner - ISA (Pvt) Ltd</h4>
+              <h5>Oct 2024- April 2025</h5>
+              <p>
+                <em>ISA (Pvt) Ltd</em>
+              </p>
+              <p>
+                Isa is a leading software company in Srilanka which providing the IT support for airarbia aviation.
+              </p>
+            </div>
+            <div className="resume-item">
+              <h4>Freelancer - Fiverr</h4>
+              <h5>Jan 2021 - Present</h5>
+              <p>
+                <em>Fiverr</em>
+              </p>
+              <p>
+                I am doing freelancing on fiverr platform which helped me to gained much experience.
+              </p>
+            </div>
+          </div>
+          <br />
+          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 className="resume-title"style={{color:"#149ddd",textTransform:"uppercase" ,fontSize:"20px" }} >Volunteering Experiences</h3>
             <div className="resume-item">
               <h4>Active Member-Designing Team</h4>
               <h5>Sep 2022- Jan 2023</h5>
@@ -85,6 +92,23 @@ const Resume = () => {
               </p>
             </div>
           </div>
+          <br />
+
+          <br />
+          <h3 className="resume-title" style={{color:"#149ddd",textTransform:"uppercase" ,fontSize:"20px"}}>Summary</h3>
+          <div className="resume-item pb-0">
+            <h4 >Soft Skills</h4>
+            <ul>
+              <li>Effective communication</li>
+              <li>Critical Thinking</li>
+              <li>Time Management</li>
+              <li>Colloborative Working</li>
+              <li>Leadership</li>
+            </ul>
+          </div>
+
+
+
         </div>
       </div>
     </section>

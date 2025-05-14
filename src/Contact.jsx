@@ -35,7 +35,7 @@ const Contact = () => {
     <section id="contact" className="contact">
       <div className="container">
         <div className="section-title">
-          <h2>Contact</h2>
+          <h2 style={{color:"#149ddd",textTransform:"uppercase" ,fontSize:"25px"}}>Contact</h2>
           <p>
             Please do not hesitate to reach out to me through any of the options below if you have any questions.
           </p>

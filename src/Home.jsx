@@ -42,7 +42,7 @@ const Home = () => {
           I'm a{" "}
           <span
             className="typed"
-            data-typed-items="Full Stack Web Developer,Cybersecurity Enthusiast,Php Developer"
+            data-typed-items="Trainee Software Engineer,Full Stack Web Developer,Cybersecurity Enthusiast,Php Developer"
           ></span>
         </p>
        

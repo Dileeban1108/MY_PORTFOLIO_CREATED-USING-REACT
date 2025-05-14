@@ -19,7 +19,7 @@ const Certificates = () => {
     <section id="certificate" className="portfolio section-bg">
       <div className="container">
         <div className="section-title">
-          <h2>Certificates</h2>
+          <h2 style={{color:"#149ddd",textTransform:"uppercase", fontSize:"25px"}}>Certificates</h2>
           <p>
             I have successfully earned certifications in Cybersecurity and
             Artificial Intelligence, reflecting my commitment to staying at the
